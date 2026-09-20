@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Button from '../components/Button'
 import Card from '../components/Card'
 import FadeIn from '../components/FadeIn'
@@ -7,6 +8,13 @@ import { testimonials } from '../data/testimonials'
 const PLANITY_URL = 'https://www.planity.com/fc-beauty-77400-lagny-sur-marne'
 const HERO_IMAGE_URL =
   'https://images.unsplash.com/photo-1613966802194-d46a163af70d?q=80&w=1920&auto=format&fit=crop'
+const BRIDAL_IMAGE_URL = '/images/bridal-2.jpg'
+const PORTRAIT_URL = '/images/flora-alpande.jpg'
+
+const LABEL_CLASSES = 'text-xs uppercase tracking-widest text-espresso/60'
+
+const FOCUS_CLASSES =
+  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-champagne focus-visible:ring-offset-2'
 
 function formatRating(rating: number): string {
   return `${rating.toLocaleString('fr-FR', {
@@ -44,6 +52,19 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
         <FadeIn>
           <h2 className="text-center font-serif text-3xl font-semibold text-espresso">
+            Une expertise dédiée à votre beauté
+          </h2>
+          <p className="mx-auto mt-6 max-w-2xl text-center leading-relaxed text-espresso/80">
+            Maquilleuse professionnelle à Lagny-sur-Marne, Flora accompagne
+            mariées, marques et clientèles privées avec un maquillage raffiné
+            et sur mesure — du naturel lumineux au glam sophistiqué.
+          </p>
+        </FadeIn>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
+        <FadeIn>
+          <h2 className="text-center font-serif text-3xl font-semibold text-espresso">
             Prestations signature
           </h2>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -55,6 +76,75 @@ export default function Home() {
                 <p className="mt-2 text-sm text-espresso/70">{service.price}</p>
               </Card>
             ))}
+          </div>
+        </FadeIn>
+      </section>
+
+      <section className="bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+          <FadeIn>
+            <div className="mx-auto grid max-w-4xl items-center gap-10 md:grid-cols-2">
+              <img
+                src={BRIDAL_IMAGE_URL}
+                alt="Mariée coiffée d’un bandeau perlé, maquillage doux et lumineux réalisé par Flora"
+                loading="lazy"
+                className="aspect-[4/5] w-full rounded-lg object-cover"
+              />
+              <div>
+                <p className={LABEL_CLASSES}>Prestation signature</p>
+                <h2 className="mt-1 font-serif text-3xl font-semibold text-espresso">
+                  Le maquillage de votre jour J
+                </h2>
+                <p className="mt-6 leading-relaxed text-espresso/80">
+                  Parce qu&rsquo;un mariage se prépare dans les moindres
+                  détails, Flora conçoit un maquillage à votre image :
+                  lumineux, tenace et magnifique sous toutes les lumières, de
+                  la cérémonie jusqu&rsquo;au bout de la nuit.
+                </p>
+                <p className="mt-4 leading-relaxed text-espresso/80">
+                  Un essai préalable permet de définir ensemble la tenue
+                  parfaite, pour que le jour venu, il ne reste qu&rsquo;à
+                  briller.
+                </p>
+                <div className="mt-8">
+                  <Button label="Prendre RDV" href={PLANITY_URL} />
+                </div>
+              </div>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+        <FadeIn>
+          <div className="mx-auto grid max-w-4xl items-center gap-10 md:grid-cols-2">
+            <div>
+              <p className={LABEL_CLASSES}>La fondatrice</p>
+              <h2 className="mt-1 font-serif text-3xl font-semibold text-espresso">
+                Flora
+              </h2>
+              <p className="mt-6 leading-relaxed text-espresso/80">
+                Spécialiste de la beauté du regard, experte en maquillage
+                semi-permanent et en manucure brésilienne, elle reçoit chacun
+                avec exigence et délicatesse.
+              </p>
+              <blockquote className="mt-8 border-l-4 border-champagne pl-6 font-serif text-xl italic text-espresso">
+                « Hommes et femmes ont le droit au même traitement,
+                c&rsquo;est-à-dire au meilleur ! »
+              </blockquote>
+              <Link
+                to="/about"
+                className={`mt-8 inline-block text-sm underline decoration-champagne decoration-2 underline-offset-4 transition-colors hover:text-espresso/70 ${FOCUS_CLASSES}`}
+              >
+                Découvrir son parcours
+              </Link>
+            </div>
+            <img
+              src={PORTRAIT_URL}
+              alt="Portrait de Flora, maquilleuse professionnelle"
+              loading="lazy"
+              className="aspect-[4/5] w-full rounded-lg object-cover"
+            />
           </div>
         </FadeIn>
       </section>
