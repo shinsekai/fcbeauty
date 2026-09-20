@@ -1,7 +1,7 @@
-PRD.md - F&C Beauty Luxury Portfolio
+PRD.md - Flora Alpande Luxury Portfolio
 
 1. Project Overview
-Project Name: F&C Beauty Luxury PortfolioBusiness Context: F&C Beauty is a beauty institute in Lagny-sur-Marne owned by Flora. The business is pivoting to focus on high-end makeup services (bridal, brand events, private clients) to increase cash flow and attract a wealthier clientele.Objective: Build a 100% static Single Page Application (SPA) to serve as a luxury digital portfolio and booking funnel.Target Audience: High-net-worth individuals, brides, brand managers, and event planners in the Île-de-France region.
+Project Name: Flora Alpande Luxury PortfolioBusiness Context: Flora Alpande is a beauty institute in Lagny-sur-Marne owned by Flora. The business is pivoting to focus on high-end makeup services (bridal, brand events, private clients) to increase cash flow and attract a wealthier clientele.Objective: Build a 100% static Single Page Application (SPA) to serve as a luxury digital portfolio and booking funnel.Target Audience: High-net-worth individuals, brides, brand managers, and event planners in the Île-de-France region.
 
 2. Technical Architecture
 Type: Static Single Page Application (SPA)
@@ -115,4 +115,4 @@ Approved Sources: You MUST use free, high-quality stock images from Unsplash, Pe
 Search Terms: Use relevant search queries like "luxury makeup", "bridal makeup", "beauty salon", "editorial makeup", "makeup products".
 URL Usage: Use the direct CDN URLs for these images in the TypeScript data files. Do not download them locally unless instructed.
 No Generic Placeholders: DO NOT use generic gray placeholders (e.g., via.placeholder.com). The site must look like a real luxury portfolio during development.
-Human Swap: The human will later swap these stock URLs with the official F&C Beauty images. Ensure the data structure makes this easy to do.
+Human Swap: The human will later swap these stock URLs with the official Flora Alpande images. Ensure the data structure makes this easy to do.

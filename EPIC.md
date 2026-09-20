@@ -1,4 +1,4 @@
-EPICS.md - F&C Beauty Portfolio Task Breakdown
+EPICS.md - Flora Alpande Portfolio Task Breakdown
 
 This document defines the exact tasks the agent must execute. CRITICAL INSTRUCTION: Do not execute these tasks all at once. Execute them sequentially. After completing a task, pause and wait for human approval before moving to the next.
 
@@ -40,7 +40,7 @@ And populate testimonials.ts with 3 dummy 5-star reviews.
 Task 2.2: Create Navbar Component
 Given the /src/components directory exists
 When the agent creates Navbar.tsx
-Then the component must render the brand name "F&C Beauty"
+Then the component must render the brand name "Flora Alpande"
 And include <NavLink> components for Home, Services, Portfolio, About, and Contact
 And implement a mobile hamburger menu that toggles a dropdown using React state (useState)
 And style it using Tailwind CSS (mobile-first, sticky top, white background, subtle shadow).

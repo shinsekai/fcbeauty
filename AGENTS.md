@@ -1,7 +1,7 @@
-AGENTS.md - F&C Beauty Portfolio Development Guidelines
+AGENTS.md - Flora Alpande Portfolio Development Guidelines
 
 1. Project Overview
-You are developing a Single Page Application (SPA) portfolio for "F&C Beauty", a luxury makeup artist. The application must be a 100% static frontend (no backend, no database). It will be built using React, Vite, TypeScript, Tailwind CSS, Framer Motion, and React Router (HashRouter).
+You are developing a Single Page Application (SPA) portfolio for "Flora Alpande", a luxury makeup artist. The application must be a 100% static frontend (no backend, no database). It will be built using React, Vite, TypeScript, Tailwind CSS, Framer Motion, and React Router (HashRouter).
 
 2. Autonomy & Human-in-the-Loop (CRITICAL)
 DO NOT GUESS: Never guess or hallucinate missing information, data, or requirements.

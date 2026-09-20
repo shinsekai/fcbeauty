@@ -18,7 +18,7 @@ export const testimonials: Testimonial[] = [
     id: 'testimonial-2',
     author: 'Sophie L.',
     rating: 5.0,
-    text: 'J’ai fait mon microshading sourcils chez F&C Beauty et le résultat est magnifique, très naturel. Flora prend le temps de tout expliquer et met immédiatement en confiance. Je recommande vivement.',
+    text: 'J’ai fait mon microshading sourcils chez Flora Alpande et le résultat est magnifique, très naturel. Flora prend le temps de tout expliquer et met immédiatement en confiance. Je recommande vivement.',
     date: '24/08/2026',
   },
   {

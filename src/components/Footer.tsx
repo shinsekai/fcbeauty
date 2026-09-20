@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="border-t border-taupe/40 bg-white">
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
         <p className="font-serif text-2xl font-semibold text-espresso">
-          F&C Beauty
+          Flora Alpande
         </p>
 
         <div className="mt-8 flex flex-col gap-8 text-sm text-espresso sm:grid sm:grid-cols-3">

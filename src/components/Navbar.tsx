@@ -52,7 +52,7 @@ export default function Navbar() {
           to="/"
           className={`font-serif text-2xl font-semibold text-espresso ${FOCUS_CLASSES}`}
         >
-          F&C Beauty
+          Flora Alpande
         </NavLink>
 
         <div className="hidden items-center gap-8 md:flex">
