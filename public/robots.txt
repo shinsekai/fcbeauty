@@ -1,0 +1,9 @@
+# Opt out of the use of site content for AI model training
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
