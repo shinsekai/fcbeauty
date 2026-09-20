@@ -86,10 +86,10 @@ export default function MentionsLegales() {
               Photographies
             </h2>
             <p className="mt-3">
-              Les photographies actuellement présentées sur ce site sont des
-              images d&rsquo;illustration issues de banques d&rsquo;images
-              gratuites (Unsplash, Pexels, Pixabay), dans l&rsquo;attente des
-              photographies officielles.
+              Les photographies présentées sur ce site sont soit des
+              photographies officielles de l&rsquo;éditrice, soit des images
+              d&rsquo;illustration issues de banques d&rsquo;images gratuites
+              (Unsplash, Pexels, Pixabay).
             </p>
           </section>
 

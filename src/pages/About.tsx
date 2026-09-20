@@ -1,7 +1,6 @@
 import FadeIn from '../components/FadeIn'
 
-const PORTRAIT_URL =
-  'https://images.unsplash.com/photo-1613353948390-f68e1b21c2a3?q=80&w=1200&auto=format&fit=crop'
+const PORTRAIT_URL = '/images/flora-alpande.jpg'
 
 export default function About() {
   return (
