@@ -38,6 +38,18 @@ npm run build
 npm run preview
 ```
 
+## Local Testing with Make and Docker
+
+A `Makefile` wraps the npm scripts (`make help` lists all targets), and a multi-stage `Dockerfile` builds the site with Node 22 and serves the static output with nginx.
+
+```bash
+# Build the production Docker image
+make docker-build
+
+# Serve it on http://localhost:8080
+make docker-run
+```
+
 ## Project Structure
 
 ```
