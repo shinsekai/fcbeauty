@@ -1,6 +1,6 @@
-# F&C Beauty — Luxury Portfolio
+# Flora Alpande — Luxury Portfolio
 
-A 100% static Single Page Application (SPA) serving as the luxury digital portfolio and booking funnel for **F&C Beauty**, a beauty institute in Lagny-sur-Marne owned by Flora. The business focuses on high-end makeup services (bridal, brand events, private clients) for a high-net-worth clientele in the Île-de-France region.
+A 100% static Single Page Application (SPA) serving as the luxury digital portfolio and booking funnel for **Flora Alpande**, a beauty institute in Lagny-sur-Marne owned by Flora. The business focuses on high-end makeup services (bridal, brand events, private clients) for a high-net-worth clientele in the Île-de-France region.
 
 All bookings are handled externally via [Planity](https://www.planity.com/fc-beauty-77400-lagny-sur-marne) — there is no backend and no database.
 
@@ -58,7 +58,7 @@ fcbeauty/
 
 All portfolio items, services, pricing, and testimonials live in strictly typed TypeScript files under `src/data/`, using the interfaces defined in [PRD.md](PRD.md) (Section 5).
 
-Until official client images are available, portfolio and hero images use free stock photos from Unsplash / Pexels / Pixabay via direct CDN URLs stored in the data files — swapping them for official F&C Beauty images later only requires editing those URLs.
+Until official client images are available, portfolio and hero images use free stock photos from Unsplash / Pexels / Pixabay via direct CDN URLs stored in the data files — swapping them for official Flora Alpande images later only requires editing those URLs.
 
 ## Security Notes
 
