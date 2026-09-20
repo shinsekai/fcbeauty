@@ -4,6 +4,7 @@ interface ButtonProps {
   label: string
   href?: string
   variant?: ButtonVariant
+  type?: 'submit'
 }
 
 const BASE_CLASSES =
@@ -14,7 +15,12 @@ const VARIANT_CLASSES: Record<ButtonVariant, string> = {
   secondary: 'border border-champagne text-espresso hover:bg-ivory',
 }
 
-export default function Button({ label, href, variant = 'primary' }: ButtonProps) {
+export default function Button({
+  label,
+  href,
+  variant = 'primary',
+  type,
+}: ButtonProps) {
   const className = `${BASE_CLASSES} ${VARIANT_CLASSES[variant]}`
 
   if (href) {
@@ -31,7 +37,7 @@ export default function Button({ label, href, variant = 'primary' }: ButtonProps
   }
 
   return (
-    <button type="button" className={className}>
+    <button type={type ?? 'button'} className={className}>
       {label}
     </button>
   )

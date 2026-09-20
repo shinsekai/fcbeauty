@@ -55,9 +55,12 @@ export default function Home() {
             Une expertise dédiée à votre beauté
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-center leading-relaxed text-espresso/80">
-            Maquilleuse professionnelle à Lagny-sur-Marne, Flora accompagne
-            mariées, marques et clientèles privées avec un maquillage raffiné
-            et sur mesure — du naturel lumineux au glam sophistiqué.
+            Maquilleuse professionnelle à Lagny-sur-Marne, Flora met son
+            expertise au service des mariées, des marques et des clientèles
+            privées en quête d&rsquo;un maquillage d&rsquo;exception.
+            Attentive à chaque visage et à chaque occasion, elle conçoit des
+            looks sur mesure, du naturel lumineux au glam le plus
+            sophistiqué, pour révéler votre beauté en toute élégance.
           </p>
         </FadeIn>
       </section>
@@ -73,7 +76,12 @@ export default function Home() {
                 <h3 className="font-serif text-xl font-semibold text-espresso">
                   {service.name}
                 </h3>
-                <p className="mt-2 text-sm text-espresso/70">{service.price}</p>
+                <Link
+                  to="/contact"
+                  className={`mt-2 inline-block text-sm underline decoration-champagne decoration-2 underline-offset-4 transition-colors hover:text-espresso/70 ${FOCUS_CLASSES}`}
+                >
+                  Contactez-nous
+                </Link>
               </Card>
             ))}
           </div>
