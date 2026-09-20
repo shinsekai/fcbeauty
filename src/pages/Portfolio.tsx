@@ -10,12 +10,19 @@ type Filter = 'All' | PortfolioItem['category']
 
 const INSTAGRAM_URL = 'https://www.instagram.com/fcbeauty.77/'
 
-const FILTERS: Filter[] = [
-  'All',
+const CATEGORY_ORDER: PortfolioItem['category'][] = [
   'Bridal',
   'Editorial',
   'Brand Events',
   'Semi-Permanent',
+]
+
+// Only offer filters for categories that actually have items
+const FILTERS: Filter[] = [
+  'All',
+  ...CATEGORY_ORDER.filter((category) =>
+    portfolioItems.some((item) => item.category === category),
+  ),
 ]
 
 const FILTER_LABELS: Record<Filter, string> = {
