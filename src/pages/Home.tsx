@@ -75,12 +75,17 @@ export default function Home() {
                 <h3 className="font-serif text-xl font-semibold text-espresso">
                   {service.name}
                 </h3>
-                <Link
-                  to="/contact"
-                  className={`mt-2 inline-block text-sm underline decoration-champagne decoration-2 underline-offset-4 transition-colors hover:text-espresso/70 ${FOCUS_CLASSES}`}
-                >
-                  Contactez-nous
-                </Link>
+                {service.imageUrl !== undefined && (
+                  <img
+                    src={service.imageUrl}
+                    alt={service.imageAlt ?? service.name}
+                    loading="lazy"
+                    className="mt-4 aspect-[4/5] w-full rounded-lg object-cover"
+                  />
+                )}
+                <div className="mt-4 text-center">
+                  <Button label="Prendre RDV" to="/contact" />
+                </div>
               </Card>
             ))}
           </div>
