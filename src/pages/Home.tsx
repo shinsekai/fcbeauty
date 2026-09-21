@@ -69,7 +69,7 @@ export default function Home() {
           <h2 className="text-center font-serif text-3xl font-semibold text-espresso">
             Prestations signature
           </h2>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {luxuryServices.map((service) => (
               <Card key={service.id}>
                 <h3 className="font-serif text-xl font-semibold text-espresso">

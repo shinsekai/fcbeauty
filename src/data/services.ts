@@ -9,22 +9,29 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    id: 'bridal-signature',
-    name: 'Bridal Signature',
+    id: 'makeup-mariage',
+    name: 'MakeUp Mariage',
     category: 'Luxury',
     duration: 'Sur devis',
     price: 'Sur devis',
   },
   {
-    id: 'brand-editorial',
-    name: 'Brand & Editorial',
+    id: 'makeup-medias',
+    name: 'MakeUp Médias',
     category: 'Luxury',
     duration: 'Sur devis',
     price: 'Sur devis',
   },
   {
-    id: 'private-events',
-    name: 'Private Events',
+    id: 'makeup-artist',
+    name: 'MakeUp Artist',
+    category: 'Luxury',
+    duration: 'Sur devis',
+    price: 'Sur devis',
+  },
+  {
+    id: 'makeup-studio',
+    name: 'MakeUp Studio',
     category: 'Luxury',
     duration: 'Sur devis',
     price: 'Sur devis',
