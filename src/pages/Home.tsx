@@ -64,32 +64,34 @@ export default function Home() {
         </FadeIn>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
-        <FadeIn>
-          <h2 className="text-center font-serif text-3xl font-semibold text-espresso">
-            Prestations signature
-          </h2>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {luxuryServices.map((service) => (
-              <Card key={service.id}>
-                <h3 className="font-serif text-xl font-semibold text-espresso">
-                  {service.name}
-                </h3>
-                {service.imageUrl !== undefined && (
-                  <img
-                    src={service.imageUrl}
-                    alt={service.imageAlt ?? service.name}
-                    loading="lazy"
-                    className="mt-4 aspect-[4/5] w-full rounded-lg object-cover"
-                  />
-                )}
-                <div className="mt-4 text-center">
-                  <Button label="Prendre RDV" to="/contact" />
-                </div>
-              </Card>
-            ))}
-          </div>
-        </FadeIn>
+      <section className="bg-white">
+        <div className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
+          <FadeIn>
+            <h2 className="text-center font-serif text-3xl font-semibold text-espresso">
+              Prestations signature
+            </h2>
+            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {luxuryServices.map((service) => (
+                <Card key={service.id} background="ivory">
+                  <h3 className="font-serif text-xl font-semibold text-espresso">
+                    {service.name}
+                  </h3>
+                  {service.imageUrl !== undefined && (
+                    <img
+                      src={service.imageUrl}
+                      alt={service.imageAlt ?? service.name}
+                      loading="lazy"
+                      className="mt-4 aspect-[4/5] w-full rounded-lg object-cover"
+                    />
+                  )}
+                  <div className="mt-4 text-center">
+                    <Button label="Prendre RDV" to="/contact" />
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </FadeIn>
+        </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
