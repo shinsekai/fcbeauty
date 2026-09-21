@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 
-const PLANITY_URL = 'https://www.planity.com/fc-beauty-77400-lagny-sur-marne'
 const INSTAGRAM_URL = 'https://www.instagram.com/fcbeauty.77/'
 const INSTAGRAM_HANDLE = '@fcbeauty.77'
 
@@ -17,7 +16,7 @@ export default function Footer() {
           Flora Alpande
         </p>
 
-        <div className="mt-8 flex flex-col gap-8 text-sm text-espresso sm:grid sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 flex flex-col gap-8 text-sm text-espresso sm:grid sm:grid-cols-2 lg:grid-cols-3">
           <div>
             <p className={LABEL_CLASSES}>Adresse</p>
             <address className="mt-2 not-italic">
@@ -38,15 +37,13 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className={LABEL_CLASSES}>Réservation</p>
-            <a
-              href={PLANITY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <p className={LABEL_CLASSES}>Contact</p>
+            <Link
+              to="/contact"
               className={`mt-2 inline-block underline decoration-champagne decoration-2 underline-offset-4 transition-colors hover:text-espresso/70 ${FOCUS_CLASSES}`}
             >
-              Prendre RDV
-            </a>
+              Demande de devis
+            </Link>
           </div>
 
           <div>

@@ -5,7 +5,6 @@ import FadeIn from '../components/FadeIn'
 import { services } from '../data/services'
 import { testimonials } from '../data/testimonials'
 
-const PLANITY_URL = 'https://www.planity.com/fc-beauty-77400-lagny-sur-marne'
 const HERO_IMAGE_URL =
   'https://images.unsplash.com/photo-1613966802194-d46a163af70d?q=80&w=1920&auto=format&fit=crop'
 const BRIDAL_IMAGE_URL = '/images/bridal-2.jpg'
@@ -43,7 +42,7 @@ export default function Home() {
               L&rsquo;Art de la Beauté &amp; du Maquillage
             </h1>
             <div className="mt-8">
-              <Button label="Prendre RDV" href={PLANITY_URL} />
+              <Button label="Prendre RDV" to="/contact" />
             </div>
           </div>
         </FadeIn>
@@ -149,7 +148,7 @@ export default function Home() {
                   briller.
                 </p>
                 <div className="mt-8">
-                  <Button label="Prendre RDV" href={PLANITY_URL} />
+                  <Button label="Prendre RDV" to="/contact" />
                 </div>
               </div>
             </div>
