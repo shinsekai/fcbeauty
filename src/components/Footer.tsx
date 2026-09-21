@@ -16,7 +16,7 @@ export default function Footer() {
           Flora Alpande
         </p>
 
-        <div className="mt-8 flex flex-col gap-8 text-sm text-espresso sm:grid sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 flex flex-col gap-8 text-sm text-espresso sm:grid sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <p className={LABEL_CLASSES}>Adresse</p>
             <address className="mt-2 not-italic">
