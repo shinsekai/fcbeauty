@@ -5,8 +5,7 @@ import FadeIn from '../components/FadeIn'
 import { services } from '../data/services'
 import { testimonials } from '../data/testimonials'
 
-const HERO_IMAGE_URL =
-  'https://images.unsplash.com/photo-1613966802194-d46a163af70d?q=80&w=1920&auto=format&fit=crop'
+const HERO_IMAGE_URL = '/images/work-2.jpg'
 const BRIDAL_IMAGE_URL = '/images/bridal-2.jpg'
 const PORTRAIT_URL = '/images/flora-alpande.jpg'
 
@@ -32,7 +31,7 @@ export default function Home() {
       <section className="relative flex min-h-[80vh] items-center justify-center">
         <img
           src={HERO_IMAGE_URL}
-          alt="Une maquilleuse applique un maquillage des paupières dans les tons rosés"
+          alt="Palettes de maquillage, pinceaux et parfums disposés sur la table de travail de Flora"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-espresso/40" aria-hidden="true" />
