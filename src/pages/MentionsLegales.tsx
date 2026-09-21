@@ -1,4 +1,5 @@
 import FadeIn from '../components/FadeIn'
+import { usePageMeta } from '../utils/usePageMeta'
 
 const CLOUDEEFY_URL = 'https://cloudeefy.io'
 
@@ -8,6 +9,12 @@ const FOCUS_CLASSES =
 const LINK_CLASSES = `underline decoration-champagne decoration-2 underline-offset-4 transition-colors hover:text-espresso/70 ${FOCUS_CLASSES}`
 
 export default function MentionsLegales() {
+  usePageMeta({
+    title: 'Mentions légales - Flora Alpande',
+    description:
+      'Mentions légales du site Flora Alpande : éditrice, hébergement, propriété intellectuelle et données personnelles.',
+  })
+
   return (
     <main className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
       <h1 className="text-center font-serif text-4xl font-semibold text-espresso">

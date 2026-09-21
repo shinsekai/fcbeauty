@@ -4,6 +4,7 @@ import Card from '../components/Card'
 import FadeIn from '../components/FadeIn'
 import { services } from '../data/services'
 import { testimonials } from '../data/testimonials'
+import { usePageMeta } from '../utils/usePageMeta'
 
 const HERO_IMAGE_URL = '/images/work-2.jpg'
 const BRIDAL_IMAGE_URL = '/images/bridal-2.jpg'
@@ -22,6 +23,12 @@ function formatRating(rating: number): string {
 }
 
 export default function Home() {
+  usePageMeta({
+    title: 'Beauty - Flora Alpande Makeup Artist',
+    description:
+      'Flora Alpande, maquilleuse professionnelle à Lagny-sur-Marne. Maquillage de mariée, séances photo, médias et événements privés sur devis.',
+  })
+
   const luxuryServices = services.filter(
     (service) => service.category === 'Luxury',
   )

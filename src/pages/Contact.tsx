@@ -2,6 +2,7 @@ import { useState } from 'react'
 import type { ChangeEvent, FormEvent } from 'react'
 import Button from '../components/Button'
 import FadeIn from '../components/FadeIn'
+import { usePageMeta } from '../utils/usePageMeta'
 
 const CONTACT_EMAIL = 'contact@fcbeauty.fr'
 
@@ -33,6 +34,12 @@ const INITIAL_FORM_DATA: QuoteFormData = {
 }
 
 export default function Contact() {
+  usePageMeta({
+    title: 'Contact - Flora Alpande',
+    description:
+      'Demandez votre devis maquillage : mariage, médias, artistique ou studio. Flora, maquilleuse professionnelle à Lagny-sur-Marne, vous répond personnellement.',
+  })
+
   const [formData, setFormData] = useState<QuoteFormData>(INITIAL_FORM_DATA)
 
   const handleChange =

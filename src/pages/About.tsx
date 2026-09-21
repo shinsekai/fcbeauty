@@ -1,8 +1,15 @@
 import FadeIn from '../components/FadeIn'
+import { usePageMeta } from '../utils/usePageMeta'
 
 const PORTRAIT_URL = '/images/flora-alpande.jpg'
 
 export default function About() {
+  usePageMeta({
+    title: 'À propos - Flora Alpande',
+    description:
+      'Flora, maquilleuse professionnelle à Lagny-sur-Marne : beauté du regard, maquillage semi-permanent et manucure brésilienne.',
+  })
+
   return (
     <main className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
       <h1 className="text-center font-serif text-4xl font-semibold text-espresso">

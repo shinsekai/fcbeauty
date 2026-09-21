@@ -1,7 +1,7 @@
 AGENTS.md - Flora Alpande Portfolio Development Guidelines
 
 1. Project Overview
-You are developing a Single Page Application (SPA) portfolio for "Flora Alpande", a luxury makeup artist. The application must be a 100% static frontend (no backend, no database). It will be built using React, Vite, TypeScript, Tailwind CSS, Framer Motion, and React Router (HashRouter).
+You are developing a Single Page Application (SPA) portfolio for "Flora Alpande", a luxury makeup artist. The application must be a 100% static frontend (no backend, no database). It will be built using React, Vite, TypeScript, Tailwind CSS, Framer Motion, and React Router (BrowserRouter).
 
 2. Autonomy & Human-in-the-Loop (CRITICAL)
 DO NOT GUESS: Never guess or hallucinate missing information, data, or requirements.
@@ -19,7 +19,7 @@ Build Tool: Vite
 Language: TypeScript (Strict mode)
 Styling: Tailwind CSS (Utility-first, no custom CSS files unless absolutely necessary)
 Animations: Framer Motion (Keep animations subtle, smooth, and performant. Use whileInView for lazy animations).
-Routing: react-router-dom (Use HashRouter to ensure compatibility with static hosting without server-side routing configs).
+Routing: react-router-dom (Use BrowserRouter so every page has a clean, indexable URL. The host must serve index.html as SPA fallback for unknown paths; see nginx.conf for the Docker deployment).
 
 5. TypeScript & Coding Standards
 Strict Typing: Enable "strict": true in tsconfig.json. No any types are allowed. Define clear interface or type definitions for all props, data structures, and function returns.
