@@ -18,9 +18,10 @@ interface QuoteFormData {
 }
 
 const SERVICE_OPTIONS = [
-  'Bridal Signature',
-  'Brand & Editorial',
-  'Private Events',
+  'MakeUp Mariage',
+  'MakeUp Médias',
+  'MakeUp Artist',
+  'MakeUp Studio',
   'Autre demande',
 ] as const
 
