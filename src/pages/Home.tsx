@@ -88,6 +88,40 @@ export default function Home() {
         </FadeIn>
       </section>
 
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+        <FadeIn>
+          <div className="mx-auto grid max-w-4xl items-center gap-10 md:grid-cols-2">
+            <div>
+              <p className={LABEL_CLASSES}>La fondatrice</p>
+              <h2 className="mt-1 font-serif text-3xl font-semibold text-espresso">
+                Flora
+              </h2>
+              <p className="mt-6 leading-relaxed text-espresso/80">
+                Spécialiste de la beauté du regard, experte en maquillage
+                semi-permanent et en manucure brésilienne, elle reçoit chacun
+                avec exigence et délicatesse.
+              </p>
+              <blockquote className="mt-8 border-l-4 border-champagne pl-6 font-serif text-xl italic text-espresso">
+                « Hommes et femmes ont le droit au même traitement,
+                c&rsquo;est-à-dire au meilleur ! »
+              </blockquote>
+              <Link
+                to="/about"
+                className={`mt-8 inline-block text-sm underline decoration-champagne decoration-2 underline-offset-4 transition-colors hover:text-espresso/70 ${FOCUS_CLASSES}`}
+              >
+                Découvrir son parcours
+              </Link>
+            </div>
+            <img
+              src={PORTRAIT_URL}
+              alt="Portrait de Flora, maquilleuse professionnelle"
+              loading="lazy"
+              className="aspect-[4/5] w-full rounded-lg object-cover"
+            />
+          </div>
+        </FadeIn>
+      </section>
+
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
           <FadeIn>
@@ -121,40 +155,6 @@ export default function Home() {
             </div>
           </FadeIn>
         </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-        <FadeIn>
-          <div className="mx-auto grid max-w-4xl items-center gap-10 md:grid-cols-2">
-            <div>
-              <p className={LABEL_CLASSES}>La fondatrice</p>
-              <h2 className="mt-1 font-serif text-3xl font-semibold text-espresso">
-                Flora
-              </h2>
-              <p className="mt-6 leading-relaxed text-espresso/80">
-                Spécialiste de la beauté du regard, experte en maquillage
-                semi-permanent et en manucure brésilienne, elle reçoit chacun
-                avec exigence et délicatesse.
-              </p>
-              <blockquote className="mt-8 border-l-4 border-champagne pl-6 font-serif text-xl italic text-espresso">
-                « Hommes et femmes ont le droit au même traitement,
-                c&rsquo;est-à-dire au meilleur ! »
-              </blockquote>
-              <Link
-                to="/about"
-                className={`mt-8 inline-block text-sm underline decoration-champagne decoration-2 underline-offset-4 transition-colors hover:text-espresso/70 ${FOCUS_CLASSES}`}
-              >
-                Découvrir son parcours
-              </Link>
-            </div>
-            <img
-              src={PORTRAIT_URL}
-              alt="Portrait de Flora, maquilleuse professionnelle"
-              loading="lazy"
-              className="aspect-[4/5] w-full rounded-lg object-cover"
-            />
-          </div>
-        </FadeIn>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
