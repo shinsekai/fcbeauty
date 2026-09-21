@@ -11,7 +11,7 @@ All quote requests are handled through the contact form (a pre-filled email to t
 - **TypeScript** — strict mode, no `any` types
 - **Tailwind CSS** — utility-first styling
 - **Framer Motion** — subtle scroll-triggered animations (`whileInView`)
-- **React Router** — `HashRouter` for static-hosting compatibility (no 404 on refresh)
+- **React Router** — `BrowserRouter` with clean, indexable URLs; the nginx config provides the SPA fallback (no 404 on refresh)
 
 ## Sitemap
 
@@ -58,7 +58,7 @@ fcbeauty/
 │   ├── components/       # Reusable UI components (Navbar, Footer, Button, Card, ...)
 │   ├── data/             # Typed data files (services, portfolio, testimonials)
 │   ├── pages/            # One file per route (Home, Portfolio, About, Contact)
-│   ├── App.tsx           # Routing layer (HashRouter + routes)
+│   ├── App.tsx           # Routing layer (BrowserRouter + routes)
 │   └── main.tsx          # Application entry point
 ├── AGENTS.md             # Development guidelines for the agent
 ├── EPIC.md               # Task breakdown (executed sequentially, with human approval)
@@ -80,7 +80,7 @@ All imagery on the site consists of official Flora Alpande photographs stored in
 
 ## Deployment
 
-The app is a fully static build (output in `dist/`) compatible with any static host: Vercel, Netlify, GitHub Pages, etc. No server-side routing configuration is required thanks to `HashRouter`.
+The app is a fully static build (output in `dist/`). The Docker image serves it with nginx and an SPA fallback (`nginx.conf`) so the `BrowserRouter` clean URLs never 404. Other static hosts need an equivalent rewrite of unknown paths to `index.html`.
 
 ## Documentation
 

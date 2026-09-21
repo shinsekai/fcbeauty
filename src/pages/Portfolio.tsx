@@ -5,6 +5,7 @@ import FadeIn from '../components/FadeIn'
 import Lightbox from '../components/Lightbox'
 import { portfolioItems } from '../data/portfolio'
 import type { PortfolioItem } from '../data/portfolio'
+import { usePageMeta } from '../utils/usePageMeta'
 
 type Filter = 'All' | PortfolioItem['category']
 
@@ -37,6 +38,12 @@ const FOCUS_CLASSES =
   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-champagne focus-visible:ring-offset-2'
 
 export default function Portfolio() {
+  usePageMeta({
+    title: 'Portfolio - Flora Alpande',
+    description:
+      'Maquillages de mariées et événements de marque : découvrez le portfolio de Flora, maquilleuse professionnelle à Lagny-sur-Marne.',
+  })
+
   const [activeFilter, setActiveFilter] = useState<Filter>('All')
   const [selectedItem, setSelectedItem] = useState<PortfolioItem | null>(null)
 
@@ -56,6 +63,12 @@ export default function Portfolio() {
       </h1>
 
       <FadeIn>
+        <p className="mx-auto mt-6 max-w-2xl text-center leading-relaxed text-espresso/80">
+          De la mariée radieuse aux regards les plus audacieux, découvrez une
+          sélection de maquillages réalisés par Flora, maquilleuse
+          professionnelle à Lagny-sur-Marne.
+        </p>
+
         <div
           role="group"
           aria-label="Filtrer le portfolio"

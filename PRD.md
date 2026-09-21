@@ -13,7 +13,7 @@ Language: French throughout (UI labels, aria-labels, html lang="fr").
 2. Technical Architecture
 Type: Static Single Page Application (SPA), no backend, no database.
 Hosting: Any static host (Vercel, Netlify, GitHub Pages). A Dockerfile (Node 22 build, nginx serve) and a Makefile wrap local testing (make help lists targets).
-Routing: HashRouter; unknown routes redirect to /.
+Routing: BrowserRouter (clean, indexable URLs); unknown routes redirect to /; hosts must serve index.html as SPA fallback (nginx.conf for the Docker deployment).
 Conversion point: The contact form composes a mailto: link to contact@fcbeauty.fr with encodeURIComponent-encoded subject ("Demande de devis" + selected service) and body (name, phone, message). No data transits through the site.
 Tooling: npm run dev / lint (oxlint) / build (tsc -b && vite build) / preview.
 AI opt-out: meta robots "noai, noimageai" in index.html plus robots.txt disallowing GPTBot, Google-Extended and CCBot.
