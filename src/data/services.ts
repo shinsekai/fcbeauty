@@ -5,6 +5,8 @@ export interface Service {
   duration: string;
   price: string; // e.g., "58€" or "Sur devis"
   description?: string;
+  imageUrl?: string;
+  imageAlt?: string;
 }
 
 export const services: Service[] = [
@@ -14,6 +16,8 @@ export const services: Service[] = [
     category: 'Luxury',
     duration: 'Sur devis',
     price: 'Sur devis',
+    imageUrl: '/images/bridal-3.jpg',
+    imageAlt: 'Élégance nuptiale',
   },
   {
     id: 'makeup-medias',
@@ -21,6 +25,8 @@ export const services: Service[] = [
     category: 'Luxury',
     duration: 'Sur devis',
     price: 'Sur devis',
+    imageUrl: '/images/brand-events-1.jpg',
+    imageAlt: 'Glam soirée',
   },
   {
     id: 'makeup-artist',
@@ -28,6 +34,8 @@ export const services: Service[] = [
     category: 'Luxury',
     duration: 'Sur devis',
     price: 'Sur devis',
+    imageUrl: '/images/brand-events-3.jpg',
+    imageAlt: 'Regard fumé',
   },
   {
     id: 'makeup-studio',
@@ -35,6 +43,8 @@ export const services: Service[] = [
     category: 'Luxury',
     duration: 'Sur devis',
     price: 'Sur devis',
+    imageUrl: '/images/brand-events-4.jpg',
+    imageAlt: 'Éclat naturel',
   },
   {
     id: 'maquillage-jour',
