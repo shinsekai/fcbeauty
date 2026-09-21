@@ -1,8 +1,11 @@
+import { Link } from 'react-router-dom'
+
 type ButtonVariant = 'primary' | 'secondary'
 
 interface ButtonProps {
   label: string
   href?: string
+  to?: string
   variant?: ButtonVariant
   type?: 'submit'
 }
@@ -18,10 +21,19 @@ const VARIANT_CLASSES: Record<ButtonVariant, string> = {
 export default function Button({
   label,
   href,
+  to,
   variant = 'primary',
   type,
 }: ButtonProps) {
   const className = `${BASE_CLASSES} ${VARIANT_CLASSES[variant]}`
+
+  if (to) {
+    return (
+      <Link to={to} className={className}>
+        {label}
+      </Link>
+    )
+  }
 
   if (href) {
     return (

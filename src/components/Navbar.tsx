@@ -1,7 +1,5 @@
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
-
-const PLANITY_URL = 'https://www.planity.com/fc-beauty-77400-lagny-sur-marne'
+import { Link, NavLink } from 'react-router-dom'
 
 interface NavLinkItem {
   to: string
@@ -10,7 +8,6 @@ interface NavLinkItem {
 
 const NAV_LINKS: NavLinkItem[] = [
   { to: '/', label: 'Accueil' },
-  { to: '/services', label: 'Services' },
   { to: '/portfolio', label: 'Portfolio' },
   { to: '/about', label: 'À propos' },
   { to: '/contact', label: 'Contact' },
@@ -69,14 +66,12 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          <a
-            href={PLANITY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/contact"
             className={`bg-champagne px-5 py-2 text-sm font-medium tracking-wide text-espresso transition-colors hover:bg-taupe ${FOCUS_CLASSES}`}
           >
             Prendre RDV
-          </a>
+          </Link>
         </div>
 
         <button
@@ -143,14 +138,13 @@ export default function Navbar() {
             ))}
           </ul>
           <div className="border-t border-taupe/40 px-4 py-4">
-            <a
-              href={PLANITY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/contact"
+              onClick={closeMenu}
               className={`block bg-champagne px-5 py-3 text-center text-sm font-medium tracking-wide text-espresso transition-colors hover:bg-taupe ${FOCUS_CLASSES}`}
             >
               Prendre RDV
-            </a>
+            </Link>
           </div>
         </div>
       )}

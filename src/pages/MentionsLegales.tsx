@@ -99,9 +99,9 @@ export default function MentionsLegales() {
             </h2>
             <p className="mt-3">
               Ce site ne collecte aucune donnée personnelle et n&rsquo;utilise
-              aucun cookie. Les réservations sont effectuées via la plateforme
-              externe Planity, qui dispose de ses propres conditions générales
-              et de sa propre politique de confidentialité.
+              aucun cookie. Le formulaire de devis ouvre votre propre messagerie
+              avec un message pré-rempli : aucune donnée n&rsquo;est transmise
+              par le site.
             </p>
             <p className="mt-3">
               Pour toute question relative à ce site, vous pouvez contacter

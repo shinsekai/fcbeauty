@@ -2,7 +2,7 @@
 
 A 100% static Single Page Application (SPA) serving as the luxury digital portfolio and booking funnel for **Flora Alpande**, a beauty institute in Lagny-sur-Marne owned by Flora. The business focuses on high-end makeup services (bridal, brand events, private clients) for a high-net-worth clientele in the Île-de-France region.
 
-All bookings are handled externally via [Planity](https://www.planity.com/fc-beauty-77400-lagny-sur-marne) — there is no backend and no database.
+All quote requests are handled through the contact form (a pre-filled email to the owner) — there is no backend and no database.
 
 ## Tech Stack
 
@@ -16,10 +16,9 @@ All bookings are handled externally via [Planity](https://www.planity.com/fc-bea
 ## Sitemap
 
 - `/` — **Home**: hero, value proposition, featured luxury services, top testimonials
-- `/services` — **Services**: luxury tiers, standard makeup, and semi-permanent makeup pricing
 - `/portfolio` — **Portfolio**: filterable grid of work (All, Bridal, Editorial, Brand Events, Semi-Permanent)
 - `/about` — **About**: Flora's biography and philosophy
-- `/contact` — **Contact**: address, hours, phone, Google Maps embed, Planity booking CTA
+- `/contact` — **Contact**: quote request form (pre-filled email via the visitor's mail client)
 - `*` — catch-all redirect to Home
 
 ## Getting Started
@@ -58,7 +57,7 @@ fcbeauty/
 ├── src/
 │   ├── components/       # Reusable UI components (Navbar, Footer, Button, Card, ...)
 │   ├── data/             # Typed data files (services, portfolio, testimonials)
-│   ├── pages/            # One file per route (Home, Services, Portfolio, About, Contact)
+│   ├── pages/            # One file per route (Home, Portfolio, About, Contact)
 │   ├── App.tsx           # Routing layer (HashRouter + routes)
 │   └── main.tsx          # Application entry point
 ├── AGENTS.md             # Development guidelines for the agent
