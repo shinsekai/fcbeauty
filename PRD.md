@@ -92,6 +92,6 @@ Meaningful alt attributes on all images; visible focus rings (focus-visible ring
 Never commit directly to main. Every change: feature branch -> build and lint pass -> push -> owner merges the PR -> agent pulls main. Verify visual changes in a browser before pushing. Customer-facing copy contains no em-dashes.
 
 8. Asset Management
-- Official owner photos live in /public/images: bridal-1..4.jpg, brand-events-1..4.jpg, flora-alpande.jpg. Owner files sometimes arrive as JPEG data with wrong extensions (.PNG/.JPG/.jpeg); rename to .jpg on copy.
-- The home hero is the last stock image (Unsplash URL in Home.tsx); swap when the owner picks an official one.
+- Official owner photos live in /public/images: bridal-1..4.jpg, brand-events-1..4.jpg, flora-alpande.jpg, work-2.jpg (home hero). Owner files sometimes arrive as JPEG data with wrong extensions (.PNG/.JPG/.jpeg); rename to .jpg on copy.
+- The hero uses the official photo /images/work-2.jpg (owner-supplied); no stock imagery remains anywhere on the site.
 - brand-events-2.jpg is currently unused; bridal-2.jpg is reserved for the bridal home section.

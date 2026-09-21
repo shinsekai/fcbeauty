@@ -69,7 +69,7 @@ fcbeauty/
 
 All portfolio items, services, pricing, and testimonials live in strictly typed TypeScript files under `src/data/`, using the interfaces defined in [PRD.md](PRD.md) (Section 5).
 
-Until official client images are available, portfolio and hero images use free stock photos from Unsplash / Pexels / Pixabay via direct CDN URLs stored in the data files — swapping them for official Flora Alpande images later only requires editing those URLs.
+All imagery on the site consists of official Flora Alpande photographs stored in `public/images/` and referenced by absolute paths (e.g. `/images/bridal-1.jpg`) from the data files and page components. Owner-supplied files sometimes carry a wrong extension (`.PNG`/`.JPG` for JPEG data): rename to `.jpg` when copying them in.
 
 ## Security Notes
 

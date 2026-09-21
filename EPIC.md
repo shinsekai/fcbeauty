@@ -44,10 +44,10 @@ Epic 5: Launch Iterations (all merged into main)
 - PR #14: tab title "Beauty - Flora Alpande Makeup Artist" + FA monogram favicon replacing the template logo.
 - PR #15: white band behind Prestations signature with ivory cards, establishing the ivory/white section rhythm.
 - PR #16: footer restored to four columns so Instagram aligns on one row.
+- Home hero swapped from Unsplash stock to the official photo /images/work-2.jpg; Mentions légales "Photographies" and the docs updated to reflect that the site is 100% official imagery (hero and legal-copy branches pending merge at the time of writing).
 
 Epic 6: Open Backlog (not scheduled; owner-driven)
 - Replace the favicon monogram with a real logo if the owner provides one (single file swap: public/favicon.svg).
-- Replace the home hero stock image with an official photo (HERO_IMAGE_URL in Home.tsx).
 - Owner review of the photo-to-service pairing on the home cards and of the eight portfolio titles/categories (src/data/services.ts, src/data/portfolio.ts).
 - Dedicated per-service photos, if shot, to replace the portfolio reuses on the home cards.
 - Deferred competitor-inspired ideas: trust logos, product brands, rating badge, Backstage/Hommes portfolio categories.
