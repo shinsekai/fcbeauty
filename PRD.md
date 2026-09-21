@@ -12,7 +12,7 @@ Language: French throughout (UI labels, aria-labels, html lang="fr").
 
 2. Technical Architecture
 Type: Static Single Page Application (SPA), no backend, no database.
-Hosting: Any static host (Vercel, Netlify, GitHub Pages). A Dockerfile (Node 22 build, nginx serve) and a Makefile wrap local testing (make help lists targets).
+Hosting: Production domain is https://floraalpande.com (the host must serve index.html with HTTP 200 as SPA fallback for unknown paths; nginx.conf does this for the Docker deployment). A Dockerfile (Node 22 build, nginx serve) and a Makefile wrap local testing (make help lists targets).
 Routing: BrowserRouter (clean, indexable URLs); unknown routes redirect to /; hosts must serve index.html as SPA fallback (nginx.conf for the Docker deployment).
 Conversion point: The contact form composes a mailto: link to contact@fcbeauty.fr with encodeURIComponent-encoded subject ("Demande de devis" + selected service) and body (name, phone, message). No data transits through the site.
 Tooling: npm run dev / lint (oxlint) / build (tsc -b && vite build) / preview.

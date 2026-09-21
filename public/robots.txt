@@ -7,3 +7,5 @@ Disallow: /
 
 User-agent: CCBot
 Disallow: /
+
+Sitemap: https://floraalpande.com/sitemap.xml
