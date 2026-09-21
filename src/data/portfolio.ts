@@ -26,7 +26,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 'bridal-4',
-    title: 'Éclat de mariée',
+    title: 'Descente de mariée',
     category: 'Bridal',
     imageUrl: '/images/bridal-4.jpg',
   },
@@ -38,7 +38,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 'brand-events-2',
-    title: 'Éclat doré',
+    title: 'Éclat rosé',
     category: 'Brand Events',
     imageUrl: '/images/brand-events-2.jpg',
   },
