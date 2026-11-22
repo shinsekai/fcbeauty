@@ -103,9 +103,17 @@ export default function MentionsLegales() {
               Données personnelles et cookies
             </h2>
             <p className="mt-3">
-              Ce site ne dépose aucun cookie. Le formulaire de devis ouvre votre
-              propre messagerie avec un message pré-rempli : aucune donnée
-              n&rsquo;est transmise par le site.
+              Ce site ne dépose aucun cookie.
+            </p>
+            <p className="mt-3">
+              Formulaire de devis : les informations que vous saisissez (nom,
+              téléphone, e-mail et date facultatifs, prestation, message et, si
+              vous le souhaitez, la façon dont vous avez connu Flora) sont
+              transmises à Formspark, prestataire d&rsquo;envoi de formulaires,
+              qui les enregistre et les envoie par e-mail à l&rsquo;éditrice.
+              Elles servent uniquement à répondre à votre demande. Vous pouvez
+              demander l&rsquo;accès, la rectification ou la suppression de vos
+              données en contactant l&rsquo;éditrice.
             </p>
             <p className="mt-3">
               Avec votre accord uniquement, ce site charge un pixel de mesure

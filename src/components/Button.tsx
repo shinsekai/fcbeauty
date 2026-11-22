@@ -9,6 +9,7 @@ interface ButtonProps {
   variant?: ButtonVariant
   type?: 'submit'
   onClick?: () => void
+  disabled?: boolean
 }
 
 const BASE_CLASSES =
@@ -26,8 +27,11 @@ export default function Button({
   variant = 'primary',
   type,
   onClick,
+  disabled,
 }: ButtonProps) {
-  const className = `${BASE_CLASSES} ${VARIANT_CLASSES[variant]}`
+  const className = `${BASE_CLASSES} ${VARIANT_CLASSES[variant]}${
+    disabled ? ' cursor-not-allowed opacity-60' : ''
+  }`
 
   if (to) {
     return (
@@ -51,7 +55,12 @@ export default function Button({
   }
 
   return (
-    <button type={type ?? 'button'} className={className} onClick={onClick}>
+    <button
+      type={type ?? 'button'}
+      className={className}
+      onClick={onClick}
+      disabled={disabled}
+    >
       {label}
     </button>
   )
