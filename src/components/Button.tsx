@@ -8,6 +8,7 @@ interface ButtonProps {
   to?: string
   variant?: ButtonVariant
   type?: 'submit'
+  onClick?: () => void
 }
 
 const BASE_CLASSES =
@@ -24,6 +25,7 @@ export default function Button({
   to,
   variant = 'primary',
   type,
+  onClick,
 }: ButtonProps) {
   const className = `${BASE_CLASSES} ${VARIANT_CLASSES[variant]}`
 
@@ -49,7 +51,7 @@ export default function Button({
   }
 
   return (
-    <button type={type ?? 'button'} className={className}>
+    <button type={type ?? 'button'} className={className} onClick={onClick}>
       {label}
     </button>
   )

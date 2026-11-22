@@ -1,5 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
+import CookieBanner from './components/CookieBanner'
 import Footer from './components/Footer'
+import MetricoolPixel from './components/MetricoolPixel'
 import Navbar from './components/Navbar'
 import ScrollToTop from './components/ScrollToTop'
 import About from './pages/About'
@@ -22,6 +24,8 @@ function App() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />
+      <MetricoolPixel />
+      <CookieBanner />
     </>
   )
 }

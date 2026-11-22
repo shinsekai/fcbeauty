@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { openConsentPanel } from '../utils/analyticsConsent'
 
 const INSTAGRAM_URL = 'https://www.instagram.com/fcbeauty.77/'
 const INSTAGRAM_HANDLE = '@fcbeauty.77'
@@ -93,7 +94,15 @@ export default function Footer() {
               className={`underline decoration-champagne decoration-2 underline-offset-4 transition-colors hover:text-espresso/70 ${FOCUS_CLASSES}`}
             >
               Mentions légales
-            </Link>
+            </Link>{' '}
+            —{' '}
+            <button
+              type="button"
+              onClick={openConsentPanel}
+              className={`underline decoration-champagne decoration-2 underline-offset-4 transition-colors hover:text-espresso/70 ${FOCUS_CLASSES}`}
+            >
+              Gérer mes préférences
+            </button>
           </p>
         </div>
       </div>

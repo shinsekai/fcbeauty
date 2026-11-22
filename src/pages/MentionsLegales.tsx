@@ -103,10 +103,24 @@ export default function MentionsLegales() {
               Données personnelles et cookies
             </h2>
             <p className="mt-3">
-              Ce site ne collecte aucune donnée personnelle et n&rsquo;utilise
-              aucun cookie. Le formulaire de devis ouvre votre propre messagerie
-              avec un message pré-rempli : aucune donnée n&rsquo;est transmise
-              par le site.
+              Ce site ne dépose aucun cookie. Le formulaire de devis ouvre votre
+              propre messagerie avec un message pré-rempli : aucune donnée
+              n&rsquo;est transmise par le site.
+            </p>
+            <p className="mt-3">
+              Avec votre accord uniquement, ce site charge un pixel de mesure
+              d&rsquo;audience fourni par Metricool (tracker.metricool.com).
+              Lorsqu&rsquo;il est chargé, Metricool reçoit votre adresse IP, des
+              informations sur votre navigateur et la page consultée, afin de
+              mesurer la fréquentation du site. Sans votre accord, aucune
+              requête n&rsquo;est envoyée à Metricool. Selon Metricool, ce
+              pixel n&rsquo;utilise pas de cookie.
+            </p>
+            <p className="mt-3">
+              Votre choix est conservé dans le stockage local de votre
+              navigateur. Vous pouvez le modifier ou le retirer à tout moment
+              avec le lien «&nbsp;Gérer mes préférences&nbsp;» en bas de chaque
+              page.
             </p>
             <p className="mt-3">
               Pour toute question relative à ce site, vous pouvez contacter
