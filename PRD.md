@@ -17,7 +17,7 @@ Routing: BrowserRouter (clean, indexable URLs); unknown routes redirect to /; ho
 Conversion point: The contact form composes a mailto: link to contact@fcbeauty.fr with encodeURIComponent-encoded subject ("Demande de devis" + selected service) and body (name, phone, message). No data transits through the site.
 Tooling: npm run dev / lint (oxlint) / build (tsc -b && vite build) / preview.
 AI opt-out: meta robots "noai, noimageai" in index.html plus robots.txt disallowing GPTBot, Google-Extended and CCBot.
-Browser tab: title "Beauty - Flora Alpande Makeup Artist"; favicon is an "FA" monogram SVG (champagne on espresso) at public/favicon.svg, to be replaced by a real logo when the owner provides one.
+Browser tab: title "Beauty - Flora Alpande Makeup Artist"; favicon is the FA monogram logo (ivory on espresso) as PNGs: public/favicon-32.png, public/favicon-192.png and public/apple-touch-icon.png. The header shows the monogram (public/images/logo-monogram.png) next to the name.
 
 3. Sitemap & Information Architecture
 / - Home: hero, expertise text, four signature service cards, founder section, bridal section, testimonials.
