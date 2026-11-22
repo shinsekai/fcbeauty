@@ -1,4 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
+import CookieBanner from './components/CookieBanner'
 import Footer from './components/Footer'
 import MetricoolPixel from './components/MetricoolPixel'
 import Navbar from './components/Navbar'
@@ -24,6 +25,7 @@ function App() {
       </Routes>
       <Footer />
       <MetricoolPixel />
+      <CookieBanner />
     </>
   )
 }
