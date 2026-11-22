@@ -6,6 +6,8 @@ COPY package.json package-lock.json ./
 RUN npm ci
 
 COPY . .
+# Optional: pass with --build-arg VITE_METRICOOL_TRACKER_HASH=<hash>
+ARG VITE_METRICOOL_TRACKER_HASH
 RUN npm run build
 
 # Serve stage: static dist/ behind nginx with SPA fallback
