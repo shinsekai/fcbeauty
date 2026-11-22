@@ -47,8 +47,16 @@ export default function Navbar() {
       >
         <NavLink
           to="/"
-          className={`font-serif text-2xl font-semibold text-espresso ${FOCUS_CLASSES}`}
+          className={`flex items-center gap-3 font-serif text-2xl font-semibold text-espresso ${FOCUS_CLASSES}`}
         >
+          <img
+            src="/images/logo-monogram.png"
+            alt=""
+            aria-hidden="true"
+            width={56}
+            height={40}
+            className="h-10 w-auto"
+          />
           Flora Alpande
         </NavLink>
 
