@@ -1,13 +1,20 @@
 import { useLocation } from 'react-router-dom'
 
-const TRACKER_URL = 'https://tracker.metricool.com/c3po.jpg'
-const trackerHash: string | undefined = import.meta.env.VITE_METRICOOL_TRACKER_HASH
+declare global {
+  interface Window {
+    __ENV__?: { METRICOOL_TRACKER_HASH?: string }
+  }
+}
 
-// Metricool tracking pixel. Renders nothing when VITE_METRICOOL_TRACKER_HASH is
-// not set (local dev, previews). The key remounts the image on each route
+const TRACKER_URL = 'https://tracker.metricool.com/c3po.jpg'
+
+// Metricool tracking pixel. The hash comes from runtime-config.js, which the
+// container generates at start from METRICOOL_TRACKER_HASH. Renders nothing
+// when it is empty (local dev). The key remounts the image on each route
 // change so client-side navigation is also reported.
 export default function MetricoolPixel() {
   const { pathname } = useLocation()
+  const trackerHash = window.__ENV__?.METRICOOL_TRACKER_HASH
 
   if (!trackerHash) {
     return null
