@@ -24,7 +24,7 @@ function formatRating(rating: number): string {
 
 export default function Home() {
   usePageMeta({
-    title: 'Beauty - Flora Alpande Makeup Artist',
+    title: 'Flora Alpande - Maquilleuse professionnelle à Lagny-sur-Marne',
     description:
       'Flora Alpande, maquilleuse professionnelle à Lagny-sur-Marne. Maquillage de mariée, séances photo, médias et événements privés sur devis.',
   })
