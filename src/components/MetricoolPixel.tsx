@@ -1,23 +1,16 @@
 import { useLocation } from 'react-router-dom'
 import { useAnalyticsConsent } from '../utils/analyticsConsent'
 
-declare global {
-  interface Window {
-    __ENV__?: { METRICOOL_TRACKER_HASH?: string }
-  }
-}
-
 const TRACKER_URL = 'https://tracker.metricool.com/c3po.jpg'
+const trackerHash: string | undefined = import.meta.env.VITE_METRICOOL_TRACKER_HASH
 
-// Metricool tracking pixel. The hash comes from runtime-config.js, which the
-// container generates at start from METRICOOL_TRACKER_HASH. Renders nothing
-// when it is empty (local dev) or until the visitor accepts measurement.
-// The key remounts the image on each route
-// change so client-side navigation is also reported.
+// Metricool tracking pixel. The hash is set at build time through
+// VITE_METRICOOL_TRACKER_HASH. Renders nothing when it is unset (local dev) or
+// until the visitor accepts measurement. The key remounts the image on each
+// route change so client-side navigation is also reported.
 export default function MetricoolPixel() {
   const { pathname } = useLocation()
   const consent = useAnalyticsConsent()
-  const trackerHash = window.__ENV__?.METRICOOL_TRACKER_HASH
 
   if (!trackerHash || consent !== 'granted') {
     return null
